@@ -1,4 +1,4 @@
-/* ===== ESTILOS GENERALES ===== */
+/* - estilos gnerales - */
 body {
   margin: 0;
   font-family: 'Courier New', monospace;
@@ -11,7 +11,7 @@ body {
   flex-direction: column;
 }
 
-/* ===== MENÚ PRINCIPAL ===== */
+/* - menú principal - */
 #menu {
   text-align: center;
   background: rgba(0, 0, 0, 0.8);
@@ -43,10 +43,11 @@ body {
   transform: scale(1.1);
 }
 
-/* ===== LIENZO (CANVAS) ===== */
+/* - lienzo (CANVAS) - */
 canvas {
   background: #111;
   display: none; /* Se muestra solo al iniciar el juego */
   border: 3px solid #0f0;
   box-shadow: 0 0 20px #0f0;
+
 }
