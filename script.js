@@ -7,9 +7,9 @@ const textoMaxPuntaje = document.getElementById("max-score");
 let jugador, objetos, puntaje, juegoTerminado, velocidad, animacionId;
 let intervaloCaida, tiempoAparicion;
 
-// 🔹 Cargar imagen del personaje
+// se cargar el personaje
 const imagenJugador = new Image();
-imagenJugador.src = "alieng.png"; // asegúrate que el archivo esté en la misma carpeta
+imagenJugador.src = "alieng.png";
 
 function iniciarJuego() {
   jugador = { x: lienzo.width / 2 - 20, y: lienzo.height - 60, ancho: 40, alto: 40 };
@@ -43,7 +43,7 @@ function actualizarJuego() {
 
   ctx.clearRect(0, 0, lienzo.width, lienzo.height);
 
-  // Dibujar jugador (imagen)
+  // Dibujar jugador
   ctx.drawImage(imagenJugador, jugador.x, jugador.y, jugador.ancho, jugador.alto);
 
   // Dibujar objetos
@@ -126,5 +126,6 @@ botonInicio.addEventListener("click", () => {
   lienzo.style.display = "block";
   iniciarJuego();
 });
+
 
 mostrarMenu();
