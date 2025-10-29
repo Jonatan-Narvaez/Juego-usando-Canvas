@@ -32,7 +32,7 @@ function generarObjetos() {
         y: 0,
         ancho: 20,
         alto: 20,
-        color: "orange"
+        color: "silver"
       });
     }
   }, tiempoAparicion);
